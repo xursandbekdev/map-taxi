@@ -1,9 +1,7 @@
-/* App.css */
-
 /* Umumiy stil */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f0f0f0; /* Yengil fon rangi */
 }
 
@@ -16,7 +14,8 @@ h1 {
   text-align: center; /* Matnni markazlashtirish */
 }
 
-.bg-blue-500 {
+/* Button styles */
+.bg-blue-600 {
   background-color: #3b82f6; /* Tugma uchun ko'k fon rangi */
 }
 
@@ -24,24 +23,25 @@ h1 {
   color: #fff; /* Oq matn rangi */
 }
 
-.px-4 {
-  padding-left: 16px; /* Chap tomonga 16px */
-  padding-right: 16px; /* O'ng tomonga 16px */
+.px-6 {
+  padding-left: 24px; /* Chap tomonga 24px */
+  padding-right: 24px; /* O'ng tomonga 24px */
 }
 
-.py-2 {
-  padding-top: 8px; /* Yuqoriga 8px */
-  padding-bottom: 8px; /* Pastga 8px */
+.py-3 {
+  padding-top: 12px; /* Yuqoriga 12px */
+  padding-bottom: 12px; /* Pastga 12px */
 }
 
 .rounded {
-  border-radius: 0.25rem; /* Yuqori burchaklarni yumshatish */
+  border-radius: 0.5rem; /* Yumshoq burchaklar */
 }
 
 .mt-4 {
   margin-top: 16px; /* Yuqoriga 16px margin */
 }
 
+/* Map styles */
 #map {
   height: 100vh; /* Xarita balandligi 100% ekran balandligi */
   width: 100%; /* Xarita kengligi 100% */
@@ -62,7 +62,7 @@ h1 {
       font-size: 1.5rem; /* Mobil qurilmalarda sarlavha o'lchamini kichiklashtirish */
   }
 
-  .bg-blue-500 {
+  .bg-blue-600 {
       width: 100%; /* Tugma kengligini 100% qilish */
       padding: 10px; /* Tugma uchun xususiy padding */
   }
@@ -73,5 +73,50 @@ h1 {
 
   .mt-4 {
       margin-top: 10px; /* Mobil qurilmalarda margin o'lchamini kichiklashtirish */
+  }
+}
+
+/* Additional styles for the button */
+.absolute {
+  position: absolute;
+  z-index: 1000; /* Ensures the button appears above other elements */
+}
+
+.bottom-10 {
+  bottom: 2.5rem; /* 10 rem as bottom offset */
+}
+
+.right-10 {
+  right: 2.5rem; /* 10 rem as right offset */
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6; /* Tugma uchun ko'k fon rangi */
+}
+
+.bg-blue-600:hover {
+  background-color: #2563eb; /* Tugma hover holatida */
+}
+
+/* Tugma ko'rinishi */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Tugma soyasi */
+}
+
+.transition {
+  transition: background-color 0.3s; /* Transition uchun */
+}
+
+/* Map container styles */
+.MapContainer {
+  position: relative; /* Add this style */
+}
+
+/* Mobil versiya uchun stil */
+@media (max-width: 768px) {
+  .absolute {
+      bottom: 10px; /* Mobil qurilmalarda tugma pastda joylashishi */
+      right: 10px; /* Mobil qurilmalarda tugma o'ngda joylashishi */
   }
 }
