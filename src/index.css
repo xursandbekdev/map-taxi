@@ -1,0 +1,77 @@
+/* App.css */
+
+/* Umumiy stil */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Yengil fon rangi */
+}
+
+h1 {
+  color: #333; /* Sarlavha rangi */
+  margin: 20px 0; /* Sarlavha uchun yuqori va pastki margin */
+}
+
+.text-center {
+  text-align: center; /* Matnni markazlashtirish */
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6; /* Tugma uchun ko'k fon rangi */
+}
+
+.text-white {
+  color: #fff; /* Oq matn rangi */
+}
+
+.px-4 {
+  padding-left: 16px; /* Chap tomonga 16px */
+  padding-right: 16px; /* O'ng tomonga 16px */
+}
+
+.py-2 {
+  padding-top: 8px; /* Yuqoriga 8px */
+  padding-bottom: 8px; /* Pastga 8px */
+}
+
+.rounded {
+  border-radius: 0.25rem; /* Yuqori burchaklarni yumshatish */
+}
+
+.mt-4 {
+  margin-top: 16px; /* Yuqoriga 16px margin */
+}
+
+#map {
+  height: 100vh; /* Xarita balandligi 100% ekran balandligi */
+  width: 100%; /* Xarita kengligi 100% */
+}
+
+/* Marker popuplari uchun stil */
+.leaflet-popup-content {
+  font-size: 14px; /* Popuplar uchun matn o'lchami */
+}
+
+.leaflet-popup-tip {
+  background: #3b82f6; /* Popupning uchiga ko'k fon rangi */
+}
+
+/* Mobil versiya uchun stil */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5rem; /* Mobil qurilmalarda sarlavha o'lchamini kichiklashtirish */
+  }
+
+  .bg-blue-500 {
+      width: 100%; /* Tugma kengligini 100% qilish */
+      padding: 10px; /* Tugma uchun xususiy padding */
+  }
+
+  .text-center {
+      padding: 0 10px; /* Mobil qurilmalarda ichki padding */
+  }
+
+  .mt-4 {
+      margin-top: 10px; /* Mobil qurilmalarda margin o'lchamini kichiklashtirish */
+  }
+}
